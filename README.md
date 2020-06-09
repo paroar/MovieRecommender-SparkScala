@@ -20,12 +20,13 @@ Before you continue, ensure you met the following requirements:
 Usage
 =========
 
-Search fot recommendations:
+Search for recommendations:
 
 ```sh
-$ spark-submit --class spark.MovieRecommender MovieRecommender.jar 4 0.90 50
+$ cd SparScala
+$ spark-submit --class spark.MovieRecommender MovieRecommender.jar 1 0.90 50
 ```
-The last 3 digits are (movieID, cosineSimilarityScore, ocurrences)
- * movieID: you can see the id of the movies on u.item
+The last three digits are (movieID, cosineSimilarityScore, ocurrences)
+ * movieID: you can see the id of the movies at the ml-100k/u.item file
  * cosineSimilarityScore: a range between [0, 1]
  * ocurrences: number of times people rated both movies
