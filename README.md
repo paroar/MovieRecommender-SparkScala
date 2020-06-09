@@ -23,7 +23,7 @@ Usage
 Search for recommendations:
 
 ```sh
-$ cd SparScala
+$ cd SparkScala
 $ spark-submit --class spark.MovieRecommender MovieRecommender.jar 1 0.90 50
 ```
 The last three digits are (movieID, cosineSimilarityScore, ocurrences)
